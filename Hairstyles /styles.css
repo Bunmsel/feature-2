@@ -1,0 +1,58 @@
+* {
+  background-color: plum;
+}
+
+body h1 {
+  color: rgb(150, 25, 150);
+}
+
+body h2 {
+  color: rgb(184, 75, 184);
+}
+/*Importing Jost font style from google*/
+@import url("https://fonts.google.com/specimen/Jost");
+p {
+  font-family: "Times New Roman", Times, serif;
+  padding-left: 10px;
+  color: rgb(49, 28, 49);
+}
+
+p select {
+  font-family: "Times New Roman", Times, serif;
+  padding-left: 10px;
+  color: purple;
+}
+
+p a {
+  font-family: "Times New Roman", Times, serif;
+  padding-left: 10px;
+  color: purple;
+}
+
+/*Flexbox used for responsive design*/
+@media all and (max-width: 1024px/* max-width for laptop or ipad*/) {
+  body h1 {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  body h2 {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+}
+/*for mobile*/
+@media all and (max-width: 600px) {
+  p {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  select {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+}
+
+p a {
+  text-align: center;
+  padding: 0;
+}
