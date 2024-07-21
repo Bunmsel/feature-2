@@ -1,0 +1,57 @@
+/*using css style to add color*/
+* {
+  background-color: plum;
+}
+h1 {
+  color: rgb(150, 25, 150);
+}
+hr {
+  border-top: none;
+}
+
+p {
+  color: rgb(61, 23, 61);
+}
+
+p b {
+  color: rgb(131, 35, 131);
+}
+
+label b {
+  color: rgb(131, 35, 131);
+}
+
+p button {
+  color: rgb(212, 24, 212);
+}
+label {
+  color: rgb(42, 26, 42);
+}
+a {
+  color: rgb(212, 24, 212);
+}
+
+/*Flexbox used for responsive design*/
+
+@media all and (max-width: 1024px/* max-width for laptop or ipad*/) {
+  li a {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+}
+/*for mobile*/
+@media all and (max-width: 600px) {
+  p {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  label {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+}
+
+p b {
+  text-align: center;
+  padding: 0;
+}
