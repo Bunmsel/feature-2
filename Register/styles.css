@@ -1,0 +1,53 @@
+* {
+  background-color: plum;
+}
+h1 {
+  color: rgb(150, 25, 150);
+}
+p {
+  color: rgb(24, 12, 24);
+}
+
+hr {
+  border-top: none;
+}
+
+p b {
+  color: rgb(128, 41, 128);
+}
+
+label {
+  color: rgb(131, 35, 131);
+}
+
+p button {
+  color: rgb(212, 24, 212);
+}
+
+a {
+  color: rgb(212, 24, 212);
+}
+
+/* Responsive design using Flexbox*/
+@media all and (max-width: 1024px/* max-width for laptop or ipad*/) {
+  li a {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+}
+/*for mobile*/
+@media all and (max-width: 600px) {
+  p {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  label {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+}
+
+p b {
+  text-align: center;
+  padding: 0;
+}
