@@ -1,0 +1,55 @@
+* {
+  background-color: plum;
+}
+
+/*Coloring and choosing font size*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,900");
+h1 b {
+  position: relative;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
+  color: rgb(150, 25, 150);
+}
+h2 b {
+  color: rgb(184, 75, 184);
+}
+h3 b {
+  color: rgb(187, 110, 187);
+}
+p {
+  font: 12px Monaco, Mono-Space;
+  color: rgb(49, 28, 49);
+}
+p b {
+  color: rgb(167, 54, 167);
+}
+
+p a {
+  color: purple;
+}
+
+/* Responsive design using Flexbox*/
+@media all and (max-width: 1024px/* max-width for laptop or ipad*/) {
+  li a {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+}
+/*for mobile*/
+@media all and (max-width: 600px) {
+  li {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+
+  li a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  li:last-of-type a {
+    border-bottom: none;
+  }
+}
