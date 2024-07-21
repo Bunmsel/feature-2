@@ -1,0 +1,63 @@
+* {
+  background-color: plum;
+}
+
+/*The background color for this first index page is plum with 
+responsive deign. Responsive design helps different users
+to interact with the web page*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,900");
+ul {
+  background-color: plum;
+}
+h1 {
+  text-decoration: snow;
+  padding: 0;
+  display: inline-block;
+  /*padding: 1em;*/
+  color: rgb(150, 25, 150);
+}
+
+div ul {
+  list-style: none;
+}
+
+ul a {
+  /*CSS Grid styles*/
+  display: block;
+  /*Define auto row size*/
+  grid-auto-rows: 50px;
+
+  /*Define auto columns*/
+  grid-template-columns: repeat(auto-fill, minmax(100px));
+  color: rgb(102, 13, 13);
+}
+
+li a:hover {
+  background: rgb(150, 25, 150);
+}
+
+/* Responsive design using Flexbox*/
+@media all and (max-width: 1024px/* max-width for laptop or ipad*/) {
+  li a {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+}
+/*for mobile*/
+@media all and (max-width: 600px) {
+  li {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+
+  li a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  li:last-of-type a {
+    border-bottom: none;
+  }
+}
