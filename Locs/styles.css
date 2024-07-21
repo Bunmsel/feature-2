@@ -1,0 +1,14 @@
+* {
+  background-color: plum;
+}
+@import url("https://fonts.google.com/specimen/Nanum+Myeongjo");
+h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: plum;
+  color: rgb(150, 25, 150);
+}
+
+p a {
+  color: rgb(212, 24, 212);
+}
